@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="SEC.png" width="150" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index1.html">Delivery Note
+                <span class="sr-only">(current)</span>
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="NewEML.html">Add new Employee</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="EmplEQ.html">Employee Equipment Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itTask.html">IT Task Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://console.firebase.google.com/project/faisalsec-2a433/database/data">DataBase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="uploadAUth.html">Upload</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help1.html">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <h1 class="mt-5">...</h1>
+        <h1 align="left">Delivery Notes</h1>
+        <textarea id="text1" placeholder="Employee Name"></textarea>
+        <textarea id="text2" placeholder="Employee ID "></textarea>
+        <textarea id="text3" placeholder="Department"></textarea>
+        <textarea id="text4" placeholder="Order Item "></textarea>
+        <textarea id="text5" placeholder="Order Quantity"></textarea>
+        <textarea id="text6" placeholder="Item Serial Number"></textarea>
+        <textarea id="text7" placeholder="Cost"></textarea>
+        <textarea id="text8" placeholder="Description"></textarea>
+
+
+        <script type="text/javascript">
+
+        </script>
+
+        <button id="button1" onclick="btnClick()"><i>submit</i></button>
+      <p></p>
+    </div>
+    <script>
+
+</script>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBbWAkuqTWJa9QqIZd2Neg1jpUscebr4W0",
+        authDomain: "faisalsec-2a433.firebaseapp.com",
+        databaseURL: "https://faisalsec-2a433.firebaseio.com",
+        projectId: "faisalsec-2a433",
+        storageBucket: "faisalsec-2a433.appspot.com",
+        messagingSenderId: "341688394725"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="SEC.png" width="150" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index1.html">Delivery Note
+                <span class="sr-only">(current)</span>
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="NewEML.html">Add new Employee</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="EmplEQ.html">Employee Equipment Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="itTask.html">IT Task Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://console.firebase.google.com/project/faisalsec-2a433/database/data">DataBase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="uploadAUth.html">Upload</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help1.html">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <h1 class="mt-5">...</h1>
+    		<h1 align="left">Employee Equipment Requests</h1>
+    		<textarea id="text1" placeholder="Employee Name"></textarea>
+    		<textarea id="text2" placeholder="Employee ID "></textarea>
+    		<textarea id="text3" placeholder="Department"></textarea>
+    			<h1 align="left">_________________________</h1>
+    <form>
+    		<h2 align="left">Type of Request:</h2>
+      <input id="add1" type="radio" name="Type" value="ADD"> ADD<br>
+      <input id="ch1" type="radio" name="Type" value="Change"> Change<br>
+      <input id="re1" type="radio" name="Type" value="Remove"> Remove<br><br>
+    </form>
+    		<h1 align="left">_________________________</h1>
+    		<h2 align="left">Type of Equipment : </h2>
+
+
+    		<input id="pc1" type="checkbox" name="PC1" value="checked" >PC<br>
+    		<input id="Laptop1" type="checkbox" name="Laptop1" value="checked">Laptop<br>
+    		<input id="Printer1" type="checkbox" name="Printer1" value="checked">Printer<br>
+    		<input type="checkbox" name="Fax1" value="null">Fax<br>
+    		<input id="Monitor1" type="checkbox" name="Monitor1" value="checked">Monitor<br>
+    		<input type="checkbox" name="Phone1" value="Phone">Phone<br>
+
+    			<h1 align="left">_________________________</h1>
+    			<h2 align="left"> Services Needed : </h2>
+
+    			<input id="em" type="checkbox" name="EM1" value="E-mail Account Set-up">E-mail Account Set-up<br>
+    			<input id="ia"type="checkbox" name="Internet_Access1" value="Internet_Access">Internet Access<br>
+    			<input type="checkbox" name="MonitorR1" value="MonitorR">Monitor Replacement<br>
+    			<input type="checkbox" name="PCT" value="PCT">PC Troubleshooting<br>
+    			<textarea id="text4" placeholder="Other: "></textarea>
+    			<h1 align="left">_________________________</h1>
+
+    			<textarea id="text5" placeholder="Other Requests and Software Needs"></textarea>
+
+
+    		<script type="text/javascript">
+
+    		</script>
+
+
+        <button id="button1" onclick="btnClick()"><i>submit</i></button>
+      <p></p>
+    </div>
+    <script>
+
+</script>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBbWAkuqTWJa9QqIZd2Neg1jpUscebr4W0",
+        authDomain: "faisalsec-2a433.firebaseapp.com",
+        databaseURL: "https://faisalsec-2a433.firebaseio.com",
+        projectId: "faisalsec-2a433",
+        storageBucket: "faisalsec-2a433.appspot.com",
+        messagingSenderId: "341688394725"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="EmpEQ.js"></script>
+
+    </script>
+  </body>
+</html>
